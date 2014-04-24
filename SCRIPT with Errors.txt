@@ -1,0 +1,410 @@
+Script started on Thu Apr 10 17:19:05 2014
+[?1034hbash-3.2$ tar xfv HW1.zip
+x Makefile
+x rolodex.cc
+x Stack.cc
+x Stack.h
+x test.txt
+bash-3.2$ make
+g++ -c rolodex.cc
+g++ rolodex.o -o rolodex
+g++ -c Stack.cc
+In file included from Stack.cc:9:
+[1m./Stack.h:21:15: [0m[0;1;35mwarning: [0m[1min-class initialization of non-static data member is a C++11 extension
+      [-Wc++11-extensions][0m
+    int place = 0;
+[0;1;32m              ^
+[0m[1mStack.cc:38:1: [0m[0;1;35mwarning: [0m[1mcontrol may reach end of non-void function [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1mStack.cc:43:1: [0m[0;1;35mwarning: [0m[1mcontrol may reach end of non-void function [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m3 warnings generated.
+g++ stack.o -o stack
+bash-3.2$ ls
+HW1.zip		Makefile	Stack.h		rolodex		rolodex.o	test.txt
+HW1LOG		Stack.cc	Stack.o		rolodex.cc	stack
+bash-3.2$ ./stack
+this is my          reversethisword
+Your input was reversethisword
+Your input Stack-Reversed is drowsihtesrever
+thisstackcantakeanywordandreverse i  it
+Your input was thisstackcantakeanywordandreverseit
+Your input Stack-Reversed is tiesreverdnadrowynaekatnackcatssiht
+itwillalsohandlenumbers1234123423489anodther-       dother-23423498#@$
+Your input was itwillalsohandlenumbers1234123423489andother-23423498#@$
+Your input Stack-Reversed is $@#89432432-rehtodna9843243214321srebmuneldnahoslalliwti
+it handles spli    sentences by separately reversing each word
+Your input was it
+Your input Stack-Reversed is ti
+Your input was handles
+Your input Stack-Reversed is seldnah
+Your input was sentences
+Your input Stack-Reversed is secnetnes
+Your input was by
+Your input Stack-Reversed is yb
+Your input was separately
+Your input Stack-Reversed is yletarapes
+Your input was reversing
+Your input Stack-Reversed is gnisrever
+Your input was each
+Your input Stack-Reversed is hcae
+Your input was word
+Your input Stack-Reversed is drow
+^DYour input was 
+Your input Stack-Reversed is 
+Control - D (EOF) input detected! Exiting program...
+bash-3.2$ ./rolodex
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+No addresses in rolodex, nothing to print!
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: l
+Specify file to load addresses from : test.txt
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+Card #1
+Last Name: azzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #2
+Last Name: bazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #3
+Last Name: cazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #4
+Last Name: dagher    First Name: hussein
+Address: 21397    Phone Number: testnumber
+Card #5
+Last Name: tran    First Name: an
+Address: tyler    Phone Number: rd
+Card #6
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+Card #7
+Last Name: wyouzzzzzsd    First Name: ettttttttand
+Address: 1234234341234 house str    Phone Number: 72222241-123-3-222
+Card #8
+Last Name: xazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #9
+Last Name: yzxcvzxcvyou    First Name: radnand
+Address: 123412341234 house str    Phone Number: 234234324741-123-3-222
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: i
+Insert a new address:
+What is the first name of the person? : new
+
+And the last name? : person
+
+And the address? : asdflsadkfj
+
+And the phone number? : 234239432
+Address successfully inserted.
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+Card #1
+Last Name: azzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #2
+Last Name: bazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #3
+Last Name: cazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #4
+Last Name: dagher    First Name: hussein
+Address: 21397    Phone Number: testnumber
+Card #5
+Last Name: person    First Name: new
+Address: asdflsadkfj    Phone Number: 234239432
+Card #6
+Last Name: tran    First Name: an
+Address: tyler    Phone Number: rd
+Card #7
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+Card #8
+Last Name: wyouzzzzzsd    First Name: ettttttttand
+Address: 1234234341234 house str    Phone Number: 72222241-123-3-222
+Card #9
+Last Name: xazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #10
+Last Name: yzxcvzxcvyou    First Name: radnand
+Address: 123412341234 house str    Phone Number: 234234324741-123-3-222
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: f
+What is the last name of the person you are looking for? : walsh
+
+And the first name? : eric
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: d
+What is the last name of the person you are looking for? : tran
+
+And the first name? : an
+The address was successfully deleted!
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+Card #1
+Last Name: azzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #2
+Last Name: bazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #3
+Last Name: cazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #4
+Last Name: dagher    First Name: hussein
+Address: 21397    Phone Number: testnumber
+Card #5
+Last Name: person    First Name: new
+Address: asdflsadkfj    Phone Number: 234239432
+Card #6
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+Card #7
+Last Name: wyouzzzzzsd    First Name: ettttttttand
+Address: 1234234341234 house str    Phone Number: 72222241-123-3-222
+Card #8
+Last Name: xazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #9
+Last Name: yzxcvzxcvyou    First Name: radnand
+Address: 123412341234 house str    Phone Number: 234234324741-123-3-222
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: s q
+Would you like to save the rolodex - Y/N?
+y
+Specify file to save addresses to : newtest.txt
+Rolodex saved to newtest.txt .
+bash-3.2$ ./rolodex
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: l
+Specify file to load addresses from : test.txt
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+Card #1
+Last Name: azzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #2
+Last Name: bazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #3
+Last Name: cazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #4
+Last Name: dagher    First Name: hussein
+Address: 21397    Phone Number: testnumber
+Card #5
+Last Name: tran    First Name: an
+Address: tyler    Phone Number: rd
+Card #6
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+Card #7
+Last Name: wyouzzzzzsd    First Name: ettttttttand
+Address: 1234234341234 house str    Phone Number: 72222241-123-3-222
+Card #8
+Last Name: xazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #9
+Last Name: yzxcvzxcvyou    First Name: radnand
+Address: 123412341234 house str    Phone Number: 234234324741-123-3-222
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: . l
+Specify file to load addresses from : newtest.txt
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+Address successfully inserted.
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: p
+Card #1
+Last Name: azzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #2
+Last Name: bazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #3
+Last Name: cazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #4
+Last Name: dagher    First Name: hussein
+Address: 21397    Phone Number: testnumber
+Card #5
+Last Name: person    First Name: new
+Address: asdflsadkfj    Phone Number: 234239432
+Card #6
+Last Name: walsh    First Name: eric
+Address: 12348374    Phone Number: 87234734
+Card #7
+Last Name: wyouzzzzzsd    First Name: ettttttttand
+Address: 1234234341234 house str    Phone Number: 72222241-123-3-222
+Card #8
+Last Name: xazzzzzzzzzzzzzzzzzthis    First Name: testing
+Address: out    Phone Number: 12345
+Card #9
+Last Name: yzxcvzxcvyou    First Name: radnand
+Address: 123412341234 house str    Phone Number: 234234324741-123-3-222
+
+Welcome to the Rolodex Main Menu:
+I - Insert new address
+F - Find a given address
+D - Delete a given address
+P - Print all addresses
+L - Load addresses from specified file
+S - Save addresses to specified file
+Q - Quit the program
+
+Type your input: q
+Would you like to save the rolodex - Y/N?
+n
+bash-3.2$ end[K[Kxit
+exit
+
+Script done on Thu Apr 10 17:22:57 2014
